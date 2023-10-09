@@ -2,19 +2,10 @@
 
 .blog {
   padding: 3rem;
-  // display: grid;
-  // grid-template-columns: 1fr;
 
   display: flex;
   flex-direction: column-reverse;
   gap: 3.2rem;
-
-  // @media only screen and (min-width: v.$md-screen-bp) {
-  //   padding: 0 6rem 5rem 6rem;
-  //   display: grid;
-  //   grid-template-columns: 1fr;
-  //   gap: 3.2rem;
-  // }
 
   @media only screen and (min-width: v.$lg-screen-bp) {
     padding: 0 6rem 5rem 6rem;
@@ -29,13 +20,20 @@
     grid-template-columns: 1fr;
     gap: 3.6rem;
     // height: 100vh;
+
+    @media only screen and (min-width: v.$md-screen-bp) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media only screen and (min-width: v.$lg-screen-bp) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__categories {
     background-color: v.$white;
     padding: 2rem;
     border-radius: 0.8rem;
-    // display: none;
 
     &--list {
       li {
@@ -49,10 +47,6 @@
     .dark & {
       background-color: v.$darkElement;
     }
-
-    // @media only screen and (min-width: v.$lg-screen-bp) {
-    //   display: block;
-    // }
   }
 
   &__topPosts {
@@ -66,13 +60,12 @@
       gap: 1.4rem;
       align-items: start;
       justify-items: space-between;
+
       h4 {
         font-family: 'Clash Display', sans-serif;
         font-size: 4rem;
         font-weight: 600;
         color: v.$primaryColor;
-        // vertical-align: top;
-        // display: inline-block;
 
         .dark & {
           color: v.$secondaryColor;
@@ -80,7 +73,6 @@
       }
 
       &:not(:last-child) {
-        // border-bottom: 2px solid v.$neutralColor2;
         margin-bottom: 1.6rem;
       }
     }
@@ -88,15 +80,9 @@
     .dark & {
       background-color: v.$darkElement;
     }
-
-    // @media only screen and (min-width: v.$lg-screen-bp) {
-    //   display: block;
-    // }
   }
 
   &__writers {
-    // display: none;
-
     &--imgs {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -115,9 +101,6 @@
         background-color: v.$darkElement;
       }
     }
-    // @media only screen and (min-width: v.$lg-screen-bp) {
-    //   display: block;
-    // }
   }
 
   &__contents {

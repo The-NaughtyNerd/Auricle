@@ -64,7 +64,7 @@ const BlogComp = () => {
               </div>
             ))}
           </div>
-          <div className="blog__writers">
+          <div className="blog__writers col-span-full">
             <h3 className="heading-secondary">Top Writers</h3>
             <div className="blog__writers--imgs">
               {topWriters.map((writer) => (
@@ -89,6 +89,7 @@ const BlogComp = () => {
               <AiOutlineSearch className="font-bold" />
             </button>
           </form>
+
           {blog.map((post) => (
             <div key={post.id} className="blog__post">
               <div className="blog__post--img">
