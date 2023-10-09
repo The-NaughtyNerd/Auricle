@@ -65,8 +65,12 @@
   }
 
   &__img {
-    max-width: 20rem;
-    // max-width: 75%;
+    width: 20rem;
     margin: auto;
+
+    @media only screen and (min-width: v.$md-screen-bp) {
+      width: 30rem;
+    }
+    // max-width: 75%;
   }
 }

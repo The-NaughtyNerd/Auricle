@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <>
       <header className="relative font-semibold">
-        <nav className="flex items-center justify-between w-full py-8 px-[3rem] md:px-[6rem] bg-white dark:bg-darkElement shadow-sm fixed z-50 ">
+        <nav className="flex items-center justify-between w-full py-8 px-[3rem] md:px-[6rem] bg-white dark:bg-darkElement shadow-sm fixed z_index ">
           <img src={logo} alt="" className="max-w-[15rem] " />
 
           {/* MENU for Large Screen */}

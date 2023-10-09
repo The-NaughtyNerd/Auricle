@@ -1,8 +1,6 @@
 import { features } from '../constants';
 import { appScreen } from '../assets';
 
-import '../sass/main.scss';
-
 const FeaturesComp = ({ title }) => {
   return (
     <>
@@ -28,7 +26,9 @@ const FeaturesComp = ({ title }) => {
                   <item.icon className="w-[80%] h-[80%] " />
                 </div> */}
                 <div className="feature__description">
-                  <h4 className="">{item.service}</h4>
+                  <h4 className="font-bold text-[1.8rem] mb-2">
+                    {item.feature}
+                  </h4>
                   <p className="">{item.info}</p>
                 </div>
               </div>
@@ -36,7 +36,7 @@ const FeaturesComp = ({ title }) => {
           </div>
 
           <div className="features__img">
-            <img src={appScreen} alt="" className="" />
+            <img src={appScreen} alt="" className="slide-animation" />
           </div>
         </div>
       </section>

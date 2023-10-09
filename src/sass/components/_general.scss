@@ -45,6 +45,19 @@
   }
 }
 
+.slide-animation {
+  animation: slideAnime 1.7s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes slideAnime {
+  0% {
+    transform: translateX(2rem);
+  }
+  100% {
+    transform: translateX(-2rem);
+  }
+}
+
 // BACKGROUNDS
 .bg-gradient {
   background: linear-gradient(
@@ -92,4 +105,8 @@
       margin: 0;
     }
   }
+}
+
+.z_index {
+  z-index: 10000;
 }

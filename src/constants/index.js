@@ -8,6 +8,10 @@ import {
   phoneScr1,
   phoneScr2,
   phoneScr3,
+  profile1,
+  profile2,
+  profile3,
+  profile4,
 } from '../assets';
 
 import {
@@ -214,5 +218,45 @@ export const blog = [
     img: phoneScr3,
     date: 'September 7, 2023',
     info: 'Round and round like carousel',
+  },
+];
+
+export const team = [
+  {
+    id: 'memeber-1',
+    img: profile1,
+    name: 'Eren Yeager',
+    qualifications: 'Ph.D Computer Science',
+    position: 'Senior Developer',
+    quote: 'Roses are red, Violets are blue? I love my JOB!!',
+    word: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nulla non distinctio perspiciatis eveniet ipsam fugiat esse nobis ea. Eligendi earum nulla provident tenetur vero cumque enim officiis, omnis libero.',
+  },
+  {
+    id: 'memeber-2',
+    img: profile2,
+    name: 'Jason Dumas',
+    qualifications: 'MA Computer Engineering',
+    position: 'Developer',
+    quote: 'Roses are red, Violets are blue? I love my JOB!!',
+    word: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nulla non distinctio perspiciatis eveniet ipsam fugiat esse nobis ea. Eligendi earum nulla provident tenetur vero cumque enim officiis, omnis libero.',
+  },
+  {
+    id: 'memeber-3',
+    img: profile3,
+    name: 'Aisha Ivanov',
+    qualifications: 'Ba. English',
+    position: 'Ui/Ux Designer',
+    quote: 'Roses are red, Violets are blue? I love my JOB!!',
+    word: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nulla non distinctio perspiciatis eveniet ipsam fugiat esse nobis ea. Eligendi earum nulla provident tenetur vero cumque enim officiis, omnis libero.',
+  },
+  {
+    id: 'memeber-4',
+    img: profile4,
+    name: 'David Ade',
+    qualifications: 'B.Sc International Relations',
+    position: 'Project Manager',
+
+    quote: 'Roses are red, Violets are blue? I love my JOB!!',
+    word: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti nulla non distinctio perspiciatis eveniet ipsam fugiat esse nobis ea. Eligendi earum nulla provident tenetur vero cumque enim officiis, omnis libero.',
   },
 ];

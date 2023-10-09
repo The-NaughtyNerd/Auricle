@@ -16,11 +16,11 @@ const AboutComp = () => {
                 <p className="">{item.info}</p>
                 <p className="">{item.moreInfo}</p>
               </div>
-              <div className="about__item--img flex items-center justify-center">
+              <div className="about__item--img">
                 <img
                   src={item.img}
                   alt=""
-                  className="max-w-[65%] bounce-animation"
+                  className="max-w-[70%] bounce-animation"
                 />
               </div>
             </div>
