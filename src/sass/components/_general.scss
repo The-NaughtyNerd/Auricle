@@ -81,6 +81,7 @@
   }
 }
 
+// TYPOGRAPHY
 .section-title {
   font-family: 'Clash Display', sans-serif;
   font-size: 4.5rem;
@@ -107,6 +108,54 @@
   }
 }
 
+.heading-secondary {
+  font-family: 'Clash Display', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: v.$primaryColor;
+  margin-bottom: 0.8rem;
+
+  .dark & {
+    color: v.$secondaryColor;
+  }
+}
+
+.heading-tertiary {
+  font-weight: 600;
+  color: v.$primaryColor;
+
+  .dark & {
+    color: v.$secondaryColor;
+  }
+}
+
+.meta-info {
+  font-size: 1.2rem;
+  color: v.$neutralColor4;
+}
+
 .z_index {
   z-index: 10000;
+}
+
+// INPUT
+.input {
+  background-color: v.$white;
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: 15rem;
+  font-size: 1.4rem;
+  color: v.$neutralColor3;
+  width: 100%;
+
+  outline: none;
+
+  &:focus {
+    border: none;
+  }
+
+  .dark & {
+    background-color: v.$darkElement;
+    color: v.$white;
+  }
 }

@@ -1,11 +1,12 @@
 import { features } from '../constants';
 import { appScreen } from '../assets';
+import 'animate.css';
 
 const FeaturesComp = ({ title }) => {
   return (
     <>
       <section className="features px-[3rem] md:px-[6rem]">
-        <div className="">
+        <div className="animate__animated animate__lightSpeedInRight">
           <h2 className="section-title">
             Auricle <span className="text-primaryColor">{title}</span>
           </h2>

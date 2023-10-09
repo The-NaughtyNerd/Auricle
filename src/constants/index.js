@@ -1,7 +1,4 @@
 import {
-  aboutImg1,
-  aboutImg2,
-  aboutImg3,
   featureIcon1,
   featureIcon2,
   featureIcon3,
@@ -12,6 +9,16 @@ import {
   profile2,
   profile3,
   profile4,
+  marketing,
+  branding,
+  growth,
+  blogImg1,
+  blogImg2,
+  blogImg3,
+  blogImg4,
+  blogImg5,
+  blogImg6,
+  blogImg7,
 } from '../assets';
 
 import {
@@ -32,27 +39,27 @@ import {
 export const about = [
   {
     id: 'about-1',
-    head: 'Unique app with different Features',
+    head: 'We are Branding',
     info: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatum fuga amet, accusamus eos laborum atque rem ad ipsam veniam pariatur praesentium optio nemo earum, ipsum fugiat laudantium architecto doloremque!',
     moreInfo:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatum fuga.',
-    img: aboutImg1,
+    img: branding,
   },
   {
     id: 'about-2',
-    head: 'Unique app with different Features',
+    head: 'We are Marketing',
     info: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatum fuga amet, accusamus eos laborum atque rem ad ipsam veniam pariatur praesentium optio nemo earum, ipsum fugiat laudantium architecto doloremque!',
     moreInfo:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatum fuga.',
-    img: aboutImg2,
+    img: marketing,
   },
   {
     id: 'about-3',
-    head: 'Unique app with different Features',
+    head: 'We are Growth',
     info: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatum fuga amet, accusamus eos laborum atque rem ad ipsam veniam pariatur praesentium optio nemo earum, ipsum fugiat laudantium architecto doloremque!',
     moreInfo:
       'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatum fuga.',
-    img: aboutImg3,
+    img: growth,
   },
 ];
 
@@ -132,7 +139,7 @@ export const navLinks = [
   { id: 1, link: '/', linkName: 'Home', current: true },
   { id: 2, link: '/about', linkName: 'About', current: false },
   { id: 3, link: '/service', linkName: 'Service', current: false },
-  { id: 4, link: '/screenshots', linkName: 'Screenshots', current: false },
+  { id: 4, link: '/blog', linkName: 'Blog', current: false },
   { id: 5, link: '/pricing', linkName: 'Pricing', current: false },
   { id: 6, link: '/team', linkName: 'Team', current: false },
   { id: 7, link: '/contact', linkName: 'Contact', current: false },
@@ -203,21 +210,57 @@ export const socials = [
 export const blog = [
   {
     id: 1,
-    img: phoneScr1,
+    img: blogImg1,
+    category: 'Technology',
     date: 'September 9, 2023',
-    info: 'Round and round like carousel',
+    topic: 'Lorem ipsum dolor sit amet consectetur',
+    detail:
+      'Autem nihil eveniet inventore unde adipisci iure quis, assumenda asperiores ea dolores, ut neque vero commodi fuga, nemo soluta explicabo.',
   },
   {
     id: 2,
-    img: phoneScr2,
+    img: blogImg2,
+    category: 'Technology',
     date: 'September 8, 2023',
-    info: 'Round and round like carousel',
+    topic: 'Lorem ipsum dolor sit amet consectetur',
+    detail:
+      'Autem nihil eveniet inventore unde adipisci iure quis, assumenda asperiores ea dolores, ut neque vero commodi fuga, nemo soluta explicabo.',
   },
   {
     id: 3,
-    img: phoneScr3,
+    img: blogImg3,
+    category: 'Technology',
     date: 'September 7, 2023',
-    info: 'Round and round like carousel',
+    topic: 'Lorem ipsum dolor sit amet consectetur',
+    detail:
+      'Autem nihil eveniet inventore unde adipisci iure quis, assumenda asperiores ea dolores, ut neque vero commodi fuga, nemo soluta explicabo.',
+  },
+  {
+    id: 4,
+    img: blogImg4,
+    category: 'Technology',
+    date: 'September 7, 2023',
+    topic: 'Lorem ipsum dolor sit amet consectetur',
+    detail:
+      'Autem nihil eveniet inventore unde adipisci iure quis, assumenda asperiores ea dolores, ut neque vero commodi fuga, nemo soluta explicabo.',
+  },
+  {
+    id: 5,
+    img: blogImg5,
+    category: 'Technology',
+    date: 'September 7, 2023',
+    topic: 'Lorem ipsum dolor sit amet consectetur',
+    detail:
+      'Autem nihil eveniet inventore unde adipisci iure quis, assumenda asperiores ea dolores, ut neque vero commodi fuga, nemo soluta explicabo.',
+  },
+  {
+    id: 6,
+    img: blogImg6,
+    category: 'Technology',
+    date: 'September 7, 2023',
+    topic: 'Lorem ipsum dolor sit amet consectetur',
+    detail:
+      'Autem nihil eveniet inventore unde adipisci iure quis, assumenda asperiores ea dolores, ut neque vero commodi fuga, nemo soluta explicabo.',
   },
 ];
 

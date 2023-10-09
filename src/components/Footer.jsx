@@ -2,6 +2,9 @@ import { logo } from '../assets';
 import { socials, blog } from '../constants';
 
 const Footer = () => {
+  const topThree = blog.slice(0, 3);
+  // console.log(threeAPI);
+
   return (
     <>
       <footer className="py-[4rem] px-[3rem] md:px-[6rem] bg-white dark:bg-darkBackground">
@@ -48,26 +51,31 @@ const Footer = () => {
               Blog
             </h4>
             <div className="posts">
-              {blog.map((item) => (
+              {topThree.map((item) => (
                 <div
                   key={item.id}
                   className="flex mb-4 shadow-md rounded-md border border-neutralColor2"
                 >
-                  <img
-                    src={item.img}
-                    alt=""
-                    className="max-w-[10rem] mr-6 object-fill"
-                  />
+                  <div className="w-[45%] h-[10rem] mr-6 border-l-0 rounded-md">
+                    <img
+                      src={item.img}
+                      alt=""
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
 
                   <div className="">
                     <p className="mb-4">{item.date}</p>
-                    <p className="">{item.info}</p>
+                    <p className="">{item.topic}</p>
                   </div>
                 </div>
               ))}
             </div>
           </div>
         </div>
+        {/* Lorem ipsum dolor sit amet consectetur, adipisicing elit.  facere?
+
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque omnis ea deserunt facilis non natus minima obcaecati voluptatum eveniet, sit quia architecto quam quod corporis harum cum consectetur quaerat animi? */}
       </footer>
     </>
   );

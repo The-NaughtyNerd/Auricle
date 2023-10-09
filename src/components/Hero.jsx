@@ -1,12 +1,13 @@
 // import '../sass/main.scss';
 import { pcBanner } from '../assets';
+import 'animate.css';
 
 const Hero = () => {
   return (
     <>
       <section className="hero">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-          <div className="md:flex md:items-center md:justify-center md:flex-col">
+          <div className="animate__animated animate__slideInLeft md:flex md:items-center md:justify-center md:flex-col ">
             <h1 className="font-clashDisplay text-[2.8rem] font-bold my-[2.5rem] tracking-wider ">
               Familiarize Your Creative Application
             </h1>
@@ -19,8 +20,8 @@ const Hero = () => {
             </button>
           </div>
 
-          <div className="md:w-[165%] md:mt-[10rem]">
-            <img src={pcBanner} alt="" className="bounce-animation" />
+          <div className="animate__animated animate__slideInRight md:w-[165%] md:mt-[10rem]">
+            <img src={pcBanner} alt="" className="" />
           </div>
         </div>
       </section>
