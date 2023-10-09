@@ -1,0 +1,95 @@
+@use '../abstracts/variables' as v;
+
+// BUTTON
+.btn {
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  transition: all 0.2s;
+  color: v.$white;
+
+  &--blue {
+    background-color: v.$primaryColor;
+
+    &:hover {
+      background-color: v.$white;
+      color: v.$primaryColor;
+    }
+  }
+
+  &--white {
+    background-color: v.$white;
+    color: v.$primaryColor;
+
+    &:hover {
+      background-color: v.$primaryColor;
+      color: v.$white;
+    }
+  }
+
+  &--lemon {
+    background-color: v.$secondaryColor;
+  }
+}
+
+// ANIMATIONS
+.bounce-animation {
+  animation: bounceAnime 1.7s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes bounceAnime {
+  0% {
+    transform: translateY(16px);
+  }
+  100% {
+    transform: translateY(-16px);
+  }
+}
+
+// BACKGROUNDS
+.bg-gradient {
+  background: linear-gradient(
+    to right,
+    v.$secondaryColor 0%,
+    v.$primaryColor 100%
+  );
+  background-size: cover;
+  background-position: center;
+}
+
+// CLIP_PATH
+.clip_path {
+  clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
+  height: max-content;
+  padding: 12rem 6rem;
+
+  @media only screen and (max-width: v.$md-screen-bp) {
+    clip-path: polygon(0 5%, 100% 0, 100% 95%, 0% 100%);
+    padding: 10rem 6rem;
+  }
+}
+
+.section-title {
+  font-family: 'Clash Display', sans-serif;
+  font-size: 4.5rem;
+  font-weight: 600;
+  color: inherit;
+  text-align: center;
+  margin-bottom: 5rem;
+
+  &::after {
+    height: 0.5rem;
+    width: 12.5rem;
+    content: '';
+    display: block;
+    background-color: v.$neutralColor2;
+    margin: 0 auto;
+  }
+
+  &.left {
+    text-align: left;
+
+    &::after {
+      margin: 0;
+    }
+  }
+}

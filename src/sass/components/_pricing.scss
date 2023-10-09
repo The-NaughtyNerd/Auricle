@@ -1,0 +1,87 @@
+@use '../abstracts/variables' as v;
+
+.pricing {
+  padding: 3rem 1.5rem;
+
+  @media only screen and (min-width: v.$md-screen-bp) {
+    padding: 5rem 6rem;
+  }
+
+  .price {
+    &__card {
+      text-align: center;
+      padding: 1.5rem;
+      background-color: v.$white;
+      border: 1px solid v.$neutralColor2;
+      // border-top-left-radius: 50%;
+      border-bottom-left-radius: 2.5rem;
+      border-bottom-right-radius: 2.5rem;
+      // border-top-right-radius: 10rem;
+      margin-bottom: 3rem;
+
+      .dark & {
+        background-color: v.$darkElement;
+      }
+
+      h2 {
+        color: v.$lightELement;
+        padding: 3rem;
+        margin-bottom: 1.5rem;
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        // border-top-right-radius: 10rem;
+      }
+
+      &:nth-child(even) {
+        h2 {
+          background-color: v.$primaryColor;
+        }
+
+        button {
+          background-color: v.$secondaryColor;
+
+          &:hover {
+            background-color: v.$primaryColor;
+          }
+        }
+      }
+      &:nth-child(odd) {
+        h2 {
+          background-color: v.$secondaryColor;
+        }
+
+        button {
+          background-color: v.$primaryColor;
+
+          &:hover {
+            background-color: v.$secondaryColor;
+          }
+        }
+      }
+    }
+
+    &__value {
+      padding: 1rem 1rem 2rem;
+      margin: 1rem 5rem;
+      color: v.$primaryColor;
+      border-bottom: 1px solid #dddddd;
+
+      p {
+        font-size: 4rem;
+      }
+
+      small {
+        font-size: 2rem;
+      }
+    }
+
+    &__offers {
+      padding: 3rem 0;
+
+      li {
+        font-size: 1.8rem;
+        line-height: 3;
+      }
+    }
+  }
+}

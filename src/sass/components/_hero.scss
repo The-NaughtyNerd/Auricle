@@ -1,0 +1,27 @@
+@use '../abstracts/variables' as v;
+
+.hero {
+  padding: 6rem 1.5rem;
+  // height: 95vh;
+  // min-height: 50rem;
+  min-height: 45vh;
+  background-image: url(../assets/slide1.png);
+  background-size: cover;
+  background-position: top;
+  overflow: hidden;
+
+  color: v.$white;
+  text-align: center;
+
+  // display: flex;
+  // align-items: center;
+  // gap: 4rem;
+  // align-items: center;
+
+  @media only screen and (min-width: v.$md-screen-bp) {
+    padding: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+  }
+}

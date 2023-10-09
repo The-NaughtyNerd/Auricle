@@ -1,0 +1,66 @@
+@use '../abstracts/variables' as v;
+
+.about {
+  padding: 3rem 1.5rem;
+  border-bottom: 1px solid v.$neutralColor2;
+
+  @media only screen and (min-width: v.$md-screen-bp) {
+    padding: 5rem 6rem;
+    // display: flex;
+    // align-items: center;
+    // justify-content: stretch;
+  }
+
+  &__content {
+  }
+
+  &__item {
+    text-align: center;
+    margin-bottom: 2rem;
+
+    @media only screen and (min-width: v.$sm-screen-bp) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      align-items: center;
+
+      &:nth-child(even) {
+        .about__item--img {
+          order: -1;
+        }
+      }
+    }
+
+    &--texts {
+      h2 {
+        margin: 1rem 0 2rem;
+        font-size: 3rem;
+        font-weight: 600;
+        background: linear-gradient(
+          to right,
+          v.$primaryColor 0%,
+          v.$secondaryColor 100%
+        );
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      p {
+        margin: 1.5rem 0;
+
+        @media only screen and (min-width: v.$sm-screen-bp) {
+          display: flex;
+          justify-content: center;
+          align-items: flex-start;
+          flex-direction: column;
+        }
+      }
+    }
+
+    &--img {
+      img {
+      }
+    }
+  }
+}

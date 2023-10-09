@@ -1,0 +1,150 @@
+NAVBAR
+Home
+About
+Service
+Screenshots
+Pricing
+Team
+Contact
+Get Support
+
+HERO
+Familiarize Your Creative Application
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum temporibus ab optio voluptate doloribus esse magnam sapiente inventore.
+Download button
+
+ABOUT
+Feature #1 - Unique app with different Features
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatum fuga amet, accusamus eos laborum atque rem ad ipsam veniam pariatur praesentium optio nemo earum, ipsum fugiat laudantium architecto doloremque!
+
+Feature #2 - Unique app with different Features
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatum fuga amet, accusamus eos laborum atque rem ad ipsam veniam pariatur praesentium optio nemo earum, ipsum fugiat laudantium architecto doloremque!
+
+Feature #3 - Unique app with different Features
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque voluptatum fuga amet, accusamus eos laborum atque rem ad ipsam veniam pariatur praesentium optio nemo earum, ipsum fugiat laudantium architecto doloremque!
+
+
+FEATURES CARDS
+Feature Card #1 -Awesome Features
+ Laborum dolore facilis rem ducimus dolorem id. Sint incidunt eveniet impedit modi!
+Read More
+Feature Card #2 - Creative Design
+ Laborum dolore facilis rem ducimus dolorem id. Sint incidunt eveniet impedit modi!
+Read More
+Feature Card #3 - 24 Hours Supports
+ Laborum dolore facilis rem ducimus dolorem id. Sint incidunt eveniet impedit modi!
+Read More
+
+SERVICES
+Header - Auricle Servies
+Feature Icon #1 - WordPress Installation
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur incidunt 
+
+Feature Icon #2 - Browser Compatible
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur incidunt 
+
+Feature Icon #3 - eCommerce Ready
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur incidunt 
+
+Feature Icon #4 - Easy to Customize
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur incidunt 
+
+Feature Icon #5 - Limitless Colors
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur incidunt 
+
+Feature Icon #6 - Lifetime Update
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur incidunt 
+
+Feature Icon #7 - SEO Friendly
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur incidunt 
+
+Feature Icon #8 - Simple Clean Code
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur incidunt 
+
+STEPS
+Heading - Easy Steps
+Go to App Store
+Create an Account
+Download and Installation
+Enjoy and Rate Us!
+
+PRICING
+Heading - Table Price
+
+Basic
+$29.00
+/month
+100 MB Disk Space
+2 Subdomains
+4 Email Accounts
+Customer Support 24/7
+Buy Now Button
+
+Standard
+$39.00
+/month
+200 MB Disk Space
+4 Subdomains
+5 Email Accounts
+Customer Support 24/7
+Buy Now Button
+
+Basic
+$49.00
+/month
+500 MB Disk Space
+10 Subdomains
+10 Email Accounts
+Customer Support 24/7
+Buy Now Button
+
+CONTACT US
+Heading - Contact Us
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur alias suscipit doloribus vel ipsa reiciendis in illo consequuntur perspiciatis praesentium atque repellat possimus recusandae, eius laborum nulla vero, voluptas blanditiis!
+
+Your Name
+Your Phone
+Your Email
+Your Message
+Send Button
+
+FOOTER
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis animi quod tempora aperiam numquam est facilis tempore. Iste reprehenderit alias est voluptas, qui impedit. Quo provident iusto rem in illo!
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero aspernatur ipsam, voluptatibus sed quasi doloribus dicta esse molestiae voluptatem, assumenda architecto obcaecati praesentium culpa sint officia cum quaerat dignissimos quos!
+
+
+Twitter Feed
+Creative__Talent 26 mins mollitia explicabo sunt, sequi perspiciatis aliquam veniam alias quisquam animi! Maxime ad magni quisquam, odio quas harum rem animi nihil.
+
+Social
+Facebook Logo 256 Likes
+Github logo 57+ projects
+IG Logo 1268 Followers
+Pinterest Logo 2412+ Pins
+
+Blog
+July 22, 2020
+Round and round like carousel
+
+July 21, 2020
+Round and round like carousel
+
+July 20, 2020
+Round and round like carousel
+
+$primary-color: #1e72bc;
+$secondary-color: #0aceb1;
+$text-color: #333333;
+
+$container-width: 120rem;
+
+// BREAKPOINTS
+$sm-screeen-bp: 36em; // 576px
+$md-screeen-bp: 48em; // 768px
+$lg-screeen-bp: 62em; // 992px
+$xl-screeen-bp: 75em; // 1200px
