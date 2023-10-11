@@ -28,6 +28,10 @@
 
   &--lemon {
     background-color: v.$secondaryColor;
+
+    &:hover {
+      background-color: v.$primaryColor;
+    }
   }
 }
 

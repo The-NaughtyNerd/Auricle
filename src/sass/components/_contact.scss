@@ -4,7 +4,7 @@
   background-color: v.$primaryColor;
 
   .dark & {
-    background-color: v.$darkElement;
+    background-color: v.$darkBackground;
   }
 
   @media only screen and (min-width: v.$lg-screen-bp) {

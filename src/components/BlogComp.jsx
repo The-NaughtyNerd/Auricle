@@ -8,6 +8,8 @@ import {
   profile5,
   profile6,
 } from '../assets';
+import ScrollAnimation from 'react-animate-on-scroll';
+import 'animate.css';
 
 const BlogComp = () => {
   const topFivePosts = blog.slice(0, 5);
@@ -23,7 +25,10 @@ const BlogComp = () => {
   return (
     <>
       <section className="blog">
-        <div className="blog__sidebar">
+        {/* <ScrollAnimation animateIn=" ">
+        
+        </ScrollAnimation> */}
+        <div className="animate__animated animate__slideInLeft blog__sidebar">
           <form className="blog__search relative hidden lg:block">
             <input
               type="search"
@@ -40,10 +45,13 @@ const BlogComp = () => {
           <div className="blog__categories">
             <h3 className="heading-secondary">Categories</h3>
             <ul className="blog__categories--list">
-              <li className="heading-tertiary">Technology</li>
+              <li className="heading-tertiary">ECommerce</li>
+              <li className="heading-tertiary">Branding</li>
+              <li className="heading-tertiary">Business</li>
               <li className="heading-tertiary">Design</li>
               <li className="heading-tertiary">Marketing</li>
-              <li className="heading-tertiary">Branding</li>
+              <li className="heading-tertiary">SEO</li>
+              <li className="heading-tertiary">Technology</li>
               <li className="heading-tertiary">WordPress</li>
             </ul>
           </div>
@@ -76,7 +84,7 @@ const BlogComp = () => {
           </div>
         </div>
 
-        <div className="blog__contents">
+        <div className="animate__animated animate__slideInRight blog__contents">
           <form className="blog__search relative block lg:hidden col-span-full">
             <input
               type="search"
@@ -91,20 +99,25 @@ const BlogComp = () => {
           </form>
 
           {blog.map((post) => (
-            <div key={post.id} className="blog__post">
-              <div className="blog__post--img">
-                <img src={post.img} alt="" className="" />
-              </div>
+            <ScrollAnimation
+              key={post.id}
+              animateIn="animate__animated animate__fadeInUp "
+            >
+              <div key={post.id} className="blog__post">
+                <div className="blog__post--img">
+                  <img src={post.img} alt="" className="" />
+                </div>
 
-              <div className="blog__post--texts">
-                <p className="meta-info">
-                  <span className="">{post.category}</span> -{' '}
-                  <span className="">{post.date}</span>
-                </p>
-                <h3 className="heading-tertiary">{post.topic}</h3>
-                <p className="">{post.detail}</p>
+                <div className="blog__post--texts">
+                  <p className="meta-info">
+                    <span className="">{post.category}</span> -{' '}
+                    <span className="">{post.date}</span>
+                  </p>
+                  <h3 className="heading-tertiary">{post.topic}</h3>
+                  <p className="">{post.detail}</p>
+                </div>
               </div>
-            </div>
+            </ScrollAnimation>
           ))}
         </div>
       </section>

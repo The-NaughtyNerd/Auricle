@@ -2,9 +2,6 @@ import {
   featureIcon1,
   featureIcon2,
   featureIcon3,
-  phoneScr1,
-  phoneScr2,
-  phoneScr3,
   profile1,
   profile2,
   profile3,
@@ -211,7 +208,7 @@ export const blog = [
   {
     id: 1,
     img: blogImg1,
-    category: 'Technology',
+    category: 'Technology, Design',
     date: 'September 9, 2023',
     topic: 'Lorem ipsum dolor sit amet consectetur',
     detail:
@@ -220,7 +217,7 @@ export const blog = [
   {
     id: 2,
     img: blogImg2,
-    category: 'Technology',
+    category: 'ECommerce, Business',
     date: 'September 8, 2023',
     topic: 'Lorem ipsum dolor sit amet consectetur',
     detail:
@@ -229,7 +226,7 @@ export const blog = [
   {
     id: 3,
     img: blogImg3,
-    category: 'Technology',
+    category: 'Business, Branding',
     date: 'September 7, 2023',
     topic: 'Lorem ipsum dolor sit amet consectetur',
     detail:
@@ -238,7 +235,7 @@ export const blog = [
   {
     id: 4,
     img: blogImg4,
-    category: 'Technology',
+    category: 'Design, Branding',
     date: 'September 7, 2023',
     topic: 'Lorem ipsum dolor sit amet consectetur',
     detail:
@@ -247,7 +244,7 @@ export const blog = [
   {
     id: 5,
     img: blogImg5,
-    category: 'Technology',
+    category: 'SEO, WordPress',
     date: 'September 7, 2023',
     topic: 'Lorem ipsum dolor sit amet consectetur',
     detail:
@@ -256,7 +253,7 @@ export const blog = [
   {
     id: 6,
     img: blogImg6,
-    category: 'Technology',
+    category: 'Marketing, ECommerce',
     date: 'September 7, 2023',
     topic: 'Lorem ipsum dolor sit amet consectetur',
     detail:
