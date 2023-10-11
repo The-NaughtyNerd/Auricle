@@ -13,21 +13,6 @@ import ScrollToTop from './components/ScrollToTop';
 function App() {
   return (
     <>
-      {/* <div className="">
-        <Header />
-
-        <AnimatedRoutes>
-          <RouteTransition exact path="/" element={<Home />} />
-          <RouteTransition path="/about" element={<About />} />
-          <RouteTransition path="/service" element={<Service />} />
-          <RouteTransition path="/blog" element={<Blog />} />
-          <RouteTransition path="/pricing" element={<Pricing />} />
-          <RouteTransition path="/team" element={<Team />} />
-          <RouteTransition path="/contact" element={<Contact />} />
-        </AnimatedRoutes>
-
-        <Footer />
-      </div> */}
       <div className="">
         <ScrollToTop />
         <Header />
