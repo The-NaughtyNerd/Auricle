@@ -14,10 +14,6 @@ const FeaturesComp = ({ title }) => {
         </div>
 
         <div className="features__grid">
-          {/* <ScrollAnimation
-            animateIn="animate__animated animate__fadeInLeft "
-            initiallyVisible={true}
-          > */}
           <div className="features__list">
             {features.map((item) => (
               <ScrollAnimation
@@ -41,10 +37,13 @@ const FeaturesComp = ({ title }) => {
               </ScrollAnimation>
             ))}
           </div>
-          {/* </ScrollAnimation> */}
 
           <div className="features__img">
-            <img src={appScreen} alt="" className="slide-animation" />
+            <img
+              src={appScreen}
+              alt="Feature Big Image"
+              className="slide-animation"
+            />
           </div>
         </div>
       </section>

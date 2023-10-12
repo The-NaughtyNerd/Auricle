@@ -4,7 +4,7 @@ import { navLinks } from '../constants';
 import { BsMoonFill, BsSunFill } from 'react-icons/bs';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { AiOutlineClose } from 'react-icons/ai';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import useDarkMode from '../theme/useDarkMode';
 import '../sass/main.scss';
 
@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <>
       <header className="relative font-semibold">
-        <nav className="animate__animated animate__slideInDown flex items-center justify-between w-full py-8 px-[3rem] md:px-[6rem] bg-white dark:bg-darkElement shadow-sm fixed z_index ">
+        <nav className="animate__animated animate__slideInDown flex items-center justify-between w-full py-8 px-[3rem] md:px-[6rem] bg-lightBackground dark:bg-darkElement shadow-sm fixed z_index ">
           <Link to={`/`} onClick={() => setActive('/')}>
             <img src={logo} alt="" className="max-w-[15rem] " />
           </Link>

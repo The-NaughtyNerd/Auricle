@@ -14,11 +14,11 @@ const PricingComp = () => {
 
           <div className="price sm:grid sm:grid-cols-2 sm:gap-8 lg:grid-cols-3 lg:gap-12 ">
             {price.map((item) => (
-              <ScrollAnimation
-                key={item.id}
-                animateIn="animate__animated animate__fadeInUp "
-              >
-                <div key={item.id} className="price__card shadow-sm">
+              <div key={item.id} className="price__card shadow-sm">
+                <ScrollAnimation
+                  key={item.id}
+                  animateIn="animate__animated animate__fadeInUp "
+                >
                   <h2>{item.package}</h2>
                   <div className="price__value">
                     <p>{item.amount}</p>
@@ -31,8 +31,8 @@ const PricingComp = () => {
                     <li>{item.offer4}</li>
                   </ul>
                   <button className="btn">{item.action}</button>
-                </div>
-              </ScrollAnimation>
+                </ScrollAnimation>
+              </div>
             ))}
           </div>
         </div>

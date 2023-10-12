@@ -12,7 +12,7 @@ const Footer = () => {
   return (
     <>
       <ScrollAnimation animateIn="animate__animated animate__slideInUp ">
-        <footer className="py-[4rem] px-[3rem] md:px-[6rem] bg-white dark:bg-darkElement">
+        <footer className="py-[4rem] px-[3rem] md:px-[6rem] bg-lightBackground dark:bg-darkElement">
           <div className=" grid sm:grid-cols-2 gap-x-12 gap-y-[3.5rem] lg:grid-cols-4">
             <div className="text-left">
               <Link to={`/`}>

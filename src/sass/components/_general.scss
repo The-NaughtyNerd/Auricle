@@ -26,11 +26,12 @@
     }
   }
 
-  &--lemon {
+  &--lemon,
+  [type='submit'] {
     background-color: v.$secondaryColor;
 
     &:hover {
-      background-color: v.$primaryColor;
+      background-color: v.$darkElement;
     }
   }
 }
@@ -68,6 +69,15 @@
     to right,
     v.$secondaryColor 0%,
     v.$primaryColor 100%
+  );
+  background-size: cover;
+  background-position: center;
+}
+.bg-gradient-1 {
+  background: linear-gradient(
+    to right,
+    v.$darkBackground 0%,
+    v.$darkBackground2 100%
   );
   background-size: cover;
   background-position: center;
@@ -128,6 +138,15 @@
   font-weight: 600;
   color: v.$primaryColor;
 
+  &--active {
+    font-weight: 600;
+    color: v.$neutralColor1;
+
+    .dark & {
+      color: v.$lightELement;
+    }
+  }
+
   .dark & {
     color: v.$secondaryColor;
   }
@@ -143,23 +162,23 @@
 }
 
 // INPUT
-// .input {
-//   background-color: v.$white;
-//   padding: 0.8rem 1.8rem;
-//   border: none;
-//   border-radius: 15rem;
-//   font-size: 1.4rem;
-//   color: v.$white;
-//   width: 100%;
+.input {
+  background-color: v.$white;
+  padding: 0.8rem 1.8rem;
+  border: none;
+  border-radius: 15rem;
+  font-size: 1.4rem;
+  color: v.$white;
+  width: 100%;
 
-//   // outline: none;
+  outline: none;
 
-//   &:focus {
-//     border: 1px solid v.$white;
-//   }
+  &:focus {
+    border: 1px solid v.$neutralColor2;
+  }
 
-//   .dark & {
-//     background-color: v.$darkElement;
-//     color: v.$white;
-//   }
-// }
+  .dark & {
+    background-color: v.$darkElement;
+    color: v.$white;
+  }
+}

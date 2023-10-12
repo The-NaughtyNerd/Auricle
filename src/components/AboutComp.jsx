@@ -15,7 +15,11 @@ const AboutComp = () => {
               className="about__item"
             >
               <div className="about__item--img">
-                <img src={item.img} alt="" className=" bounce-animation" />
+                <img
+                  src={item.img}
+                  alt={`${item.head} image`}
+                  className=" bounce-animation"
+                />
               </div>
 
               <div className="about__item--texts">

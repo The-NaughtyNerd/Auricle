@@ -10,6 +10,7 @@ import {
 } from '../assets';
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css';
+import { useState, useEffect } from 'react';
 
 const BlogComp = () => {
   const topFivePosts = blog.slice(0, 5);
@@ -21,6 +22,35 @@ const BlogComp = () => {
     { id: 'writer-5', pic: profile5 },
     { id: 'writer-6', pic: profile6 },
   ];
+  const categories = [
+    { id: 1, name: 'ECommerce' },
+    { id: 2, name: 'Branding' },
+    { id: 3, name: 'Business' },
+    { id: 4, name: 'Design' },
+    { id: 5, name: 'Marketing' },
+    { id: 6, name: 'SEO' },
+    { id: 7, name: 'Technology' },
+    { id: 8, name: 'WordPress' },
+  ];
+
+  const [filter, setFilter] = useState(false);
+  const [filteredCategory, setFilteredCategory] = useState([]);
+  const [category, setCategory] = useState('');
+  const [active, setActive] = useState('');
+
+  // const filteredCategory = (name) => {
+  //   const filtered = blog.filter((post) => post.category.includes(name));
+  //   !setFilter;
+  //   // console.log(name);
+  //   // console.log(filtered);
+  //   return filtered;
+  // };
+  // console.log(filteredCategory);
+  useEffect(() => {
+    const result = blog.filter((post) => post.category.includes(category));
+    setFilteredCategory(result);
+    setFilter(true);
+  }, [category]);
 
   return (
     <>
@@ -45,14 +75,37 @@ const BlogComp = () => {
           <div className="blog__categories">
             <h3 className="heading-secondary">Categories</h3>
             <ul className="blog__categories--list">
-              <li className="heading-tertiary">ECommerce</li>
-              <li className="heading-tertiary">Branding</li>
-              <li className="heading-tertiary">Business</li>
-              <li className="heading-tertiary">Design</li>
-              <li className="heading-tertiary">Marketing</li>
-              <li className="heading-tertiary">SEO</li>
-              <li className="heading-tertiary">Technology</li>
-              <li className="heading-tertiary">WordPress</li>
+              <li
+                onClick={() => {
+                  setFilter(false);
+                  setActive('All');
+                }}
+                // className="heading-tertiary cursor-pointer"
+                className={`${
+                  active === 'All'
+                    ? 'heading-tertiary--active'
+                    : 'heading-tertiary'
+                } cursor-pointer`}
+              >
+                All
+              </li>
+              {categories.map((category) => (
+                <li
+                  key={category.id}
+                  onClick={() => {
+                    setCategory(category.name);
+                    setActive(category.name);
+                  }}
+                  // className="heading-tertiary cursor-pointer"
+                  className={`${
+                    active === category.name
+                      ? 'heading-tertiary--active'
+                      : 'heading-tertiary'
+                  } cursor-pointer`}
+                >
+                  {category.name}
+                </li>
+              ))}
             </ul>
           </div>
           <div className="blog__topPosts">
@@ -97,28 +150,49 @@ const BlogComp = () => {
               <AiOutlineSearch className="font-bold" />
             </button>
           </form>
+          {filter === false
+            ? blog.map((post) => (
+                <ScrollAnimation
+                  key={post.id}
+                  animateIn="animate__animated animate__fadeInUp "
+                >
+                  <div key={post.id} className="blog__post">
+                    <div className="blog__post--img">
+                      <img src={post.img} alt="" className="" />
+                    </div>
 
-          {blog.map((post) => (
-            <ScrollAnimation
-              key={post.id}
-              animateIn="animate__animated animate__fadeInUp "
-            >
-              <div key={post.id} className="blog__post">
-                <div className="blog__post--img">
-                  <img src={post.img} alt="" className="" />
-                </div>
+                    <div className="blog__post--texts">
+                      <p className="meta-info">
+                        <span className="">{post.category}</span> -{' '}
+                        <span className="">{post.date}</span>
+                      </p>
+                      <h3 className="heading-tertiary">{post.topic}</h3>
+                      <p className="">{post.detail}</p>
+                    </div>
+                  </div>
+                </ScrollAnimation>
+              ))
+            : filteredCategory.map((post) => (
+                <ScrollAnimation
+                  key={post.id}
+                  animateIn="animate__animated animate__fadeInUp "
+                >
+                  <div key={post.id} className="blog__post">
+                    <div className="blog__post--img">
+                      <img src={post.img} alt="" className="" />
+                    </div>
 
-                <div className="blog__post--texts">
-                  <p className="meta-info">
-                    <span className="">{post.category}</span> -{' '}
-                    <span className="">{post.date}</span>
-                  </p>
-                  <h3 className="heading-tertiary">{post.topic}</h3>
-                  <p className="">{post.detail}</p>
-                </div>
-              </div>
-            </ScrollAnimation>
-          ))}
+                    <div className="blog__post--texts">
+                      <p className="meta-info">
+                        <span className="">{post.category}</span> -{' '}
+                        <span className="">{post.date}</span>
+                      </p>
+                      <h3 className="heading-tertiary">{post.topic}</h3>
+                      <p className="">{post.detail}</p>
+                    </div>
+                  </div>
+                </ScrollAnimation>
+              ))}
         </div>
       </section>
     </>

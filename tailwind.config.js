@@ -17,6 +17,7 @@ export default {
         neutralColor2: '#eee',
         lightBackground: 'rgb(250, 250, 250)',
         darkBackground: '#061726',
+        darkBackground2: '#292e49',
         darkElement: '#092238',
         lightText: '#e9f1f8',
         // darkElement: 'rgb(43, 57, 69)',

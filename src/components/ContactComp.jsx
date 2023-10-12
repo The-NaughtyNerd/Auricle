@@ -2,13 +2,23 @@ import Map from './Map';
 import ScrollAnimation from 'react-animate-on-scroll';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useState } from 'react';
 
 const ContactComp = () => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phoneNo, setPhoneNo] = useState('');
+  const [message, setMessage] = useState('');
+
   const submitContact = (e) => {
-    // console.log(e);
     e.preventDefault();
     toast.success(`Thank you for Contacting us`);
+    setName('');
+    setEmail('');
+    setPhoneNo('');
+    setMessage('');
   };
+
   return (
     <>
       <section className="Contact">
@@ -36,7 +46,12 @@ const ContactComp = () => {
                 className=""
                 type="text"
                 name="name"
-                id=""
+                value={name}
+                onChange={(e) => {
+                  const value = e.target.value;
+                  setName(value);
+                }}
+                id="name"
                 placeholder="Your Name"
               />
               <input
@@ -44,22 +59,37 @@ const ContactComp = () => {
                 className=""
                 type="tel"
                 name="phone"
-                id=""
+                id="phoneNo"
+                value={phoneNo}
+                onChange={(e) => {
+                  const value = e.target.value;
+                  setPhoneNo(value);
+                }}
                 placeholder="Your Phone Number"
               />
               <input
                 required
                 className=""
                 type="email"
-                name=""
-                id=""
+                value={email}
+                onChange={(e) => {
+                  const value = e.target.value;
+                  setEmail(value);
+                }}
+                name="email"
+                id="email"
                 placeholder="Your Email"
               />
               <textarea
                 required
                 className=""
-                name=""
-                id=""
+                name="message"
+                value={message}
+                onChange={(e) => {
+                  const value = e.target.value;
+                  setMessage(value);
+                }}
+                id="message"
                 cols="30"
                 rows="10"
                 placeholder="Your Message"

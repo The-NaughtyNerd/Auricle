@@ -18,7 +18,8 @@ const Team = () => {
             {team.map((item) => (
               <ScrollAnimation
                 animateIn="animate__animated animate__fadeInRight"
-                // initiallyVisible={true}
+                animateOut="animate__animated animate__fadeInRight"
+                initiallyVisible={true}
                 key={item.id}
                 className="member"
               >
