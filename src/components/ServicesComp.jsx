@@ -6,9 +6,12 @@ const ServicesComp = () => {
   return (
     <>
       <section className="services clip_path">
-        <ScrollAnimation animateIn="animate__animated animate__fadeInUp ">
-          <div className="services__container ">
-            {services.map((item) => (
+        <div className="services__container ">
+          {services.map((item) => (
+            <ScrollAnimation
+              key={item.id}
+              animateIn="animate__animated animate__fadeInUp "
+            >
               <div key={item.id} className="service shadow-md">
                 <img src={item.img} alt="" className="" />
                 <h3 className="">{item.heading}</h3>
@@ -20,9 +23,9 @@ const ServicesComp = () => {
                   Read More
                 </a>
               </div>
-            ))}
-          </div>
-        </ScrollAnimation>
+            </ScrollAnimation>
+          ))}
+        </div>
       </section>
     </>
   );

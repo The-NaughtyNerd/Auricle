@@ -139,27 +139,27 @@
 }
 
 .z_index {
-  z-index: 10000;
+  z-index: 9000;
 }
 
 // INPUT
-.input {
-  background-color: v.$white;
-  padding: 0.8rem 1.8rem;
-  border: none;
-  border-radius: 15rem;
-  font-size: 1.4rem;
-  color: v.$neutralColor3;
-  width: 100%;
+// .input {
+//   background-color: v.$white;
+//   padding: 0.8rem 1.8rem;
+//   border: none;
+//   border-radius: 15rem;
+//   font-size: 1.4rem;
+//   color: v.$white;
+//   width: 100%;
 
-  outline: none;
+//   // outline: none;
 
-  &:focus {
-    border: none;
-  }
+//   &:focus {
+//     border: 1px solid v.$white;
+//   }
 
-  .dark & {
-    background-color: v.$darkElement;
-    color: v.$white;
-  }
-}
+//   .dark & {
+//     background-color: v.$darkElement;
+//     color: v.$white;
+//   }
+// }

@@ -9,11 +9,14 @@ import Team from './pages/Team/Team';
 import Contact from './pages/Contact/Contact';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
     <>
-      <div className="">
+      <div>
+        <ToastContainer />
         <ScrollToTop />
         <Header />
 

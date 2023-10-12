@@ -1,7 +1,14 @@
 import Map from './Map';
 import ScrollAnimation from 'react-animate-on-scroll';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ContactComp = () => {
+  const submitContact = (e) => {
+    // console.log(e);
+    e.preventDefault();
+    toast.success(`Thank you for Contacting us`);
+  };
   return (
     <>
       <section className="Contact">
@@ -23,29 +30,33 @@ const ContactComp = () => {
               recusandae, eius laborum nulla vero, voluptas blanditiis!
             </p>
 
-            <form action="" className="contact__form">
+            <form onSubmit={submitContact} className="contact__form">
               <input
-                className="input"
+                required
+                className=""
                 type="text"
                 name="name"
                 id=""
                 placeholder="Your Name"
               />
               <input
-                className="input"
+                required
+                className=""
                 type="tel"
                 name="phone"
                 id=""
                 placeholder="Your Phone Number"
               />
               <input
-                className="input"
+                required
+                className=""
                 type="email"
                 name=""
                 id=""
                 placeholder="Your Email"
               />
               <textarea
+                required
                 className=""
                 name=""
                 id=""
@@ -54,7 +65,9 @@ const ContactComp = () => {
                 placeholder="Your Message"
               ></textarea>
 
-              <button className="btn btn--lemon">Send</button>
+              <button type="submit" className="btn btn--lemon">
+                Send
+              </button>
             </form>
           </div>
         </ScrollAnimation>
