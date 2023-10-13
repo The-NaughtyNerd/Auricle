@@ -58,7 +58,7 @@
     &--post {
       display: flex;
       gap: 1.4rem;
-      align-items: start;
+      align-items: flex-start;
       justify-items: space-between;
 
       h4 {
@@ -104,7 +104,6 @@
   }
 
   &__contents {
-    // height: max-content;
     display: grid;
     grid-template-columns: 1fr;
 
