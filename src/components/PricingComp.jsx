@@ -17,7 +17,7 @@ const PricingComp = () => {
               <div key={item.id} className="price__card shadow-sm">
                 <ScrollAnimation
                   key={item.id}
-                  animateIn="animate__animated animate__fadeInUp "
+                  animateIn="animate__animated animate__zoomIn animate__slow "
                 >
                   <h2>{item.package}</h2>
                   <div className="price__value">

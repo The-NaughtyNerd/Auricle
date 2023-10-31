@@ -17,9 +17,9 @@ const Team = () => {
           <div className="space-y-12">
             {team.map((item) => (
               <ScrollAnimation
-                animateIn="animate__animated animate__fadeInRight"
-                animateOut="animate__animated animate__fadeInRight"
-                initiallyVisible={true}
+                // animateIn="animate__animated animate__fadeInRight animate__slower"
+                animateIn="animate__animated animate__zoomIn animate__slower"
+                // initiallyVisible={true}
                 key={item.id}
                 className="member"
               >
