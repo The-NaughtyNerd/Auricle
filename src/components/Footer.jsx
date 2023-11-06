@@ -1,11 +1,12 @@
 import { logo } from '../assets';
 import { socials, blog } from '../constants';
 import { Link } from 'react-router-dom';
-// import { useState } from 'react';
+import { Context } from '../Contexts/Context';
 import ScrollAnimation from 'react-animate-on-scroll';
+import { useContext } from 'react';
 
 const Footer = () => {
-  // const [active, setActive] = useState('');
+  const { active, setActive } = useContext(Context);
 
   const topThree = blog.slice(0, 3);
 
@@ -41,11 +42,33 @@ const Footer = () => {
                 Explore
               </h4>
               <ul className="flex flex-col gap-[2rem]">
-                <li>More Services</li>
-                <li>Subscription</li>
-                <li>Our Team</li>
-                <li>Terms</li>
-                <li>Privacy & Cookies</li>
+                <Link
+                  to={`/service`}
+                  onClick={() => setActive('Service')}
+                  className="transition-all hover:text-primaryColor active:text-primaryColor"
+                >
+                  <li>More Services</li>
+                </Link>
+                <Link
+                  to={'/pricing'}
+                  onClick={() => setActive('Pricing')}
+                  className="transition-all hover:text-primaryColor active:text-primaryColor"
+                >
+                  <li>Subscription</li>
+                </Link>
+                <Link
+                  to={`/team`}
+                  onClick={() => setActive('Team')}
+                  className="transition-all hover:text-primaryColor active:text-primaryColor"
+                >
+                  <li>Our Team</li>
+                </Link>
+                <li className="cursor-pointer transition-all hover:text-primaryColor">
+                  Terms
+                </li>
+                <li className="cursor-pointer transition-all hover:text-primaryColor">
+                  Privacy & Cookies
+                </li>
               </ul>
             </div>
 
@@ -66,8 +89,12 @@ const Footer = () => {
             </div>
 
             <div className="">
-              <Link to={`/blog`} className="">
-                <h4 className="mb-[2rem] font-bold text-[1.8rem] text-neutralColor1 dark:text-lightText transition-all hover:text-primaryColor">
+              <Link
+                to={`/blog`}
+                className="transition-all hover:text-primaryColor"
+                onClick={() => setActive('Blog')}
+              >
+                <h4 className="mb-[2rem] font-bold text-[1.8rem] text-neutralColor1 dark:text-lightText ">
                   Blog
                 </h4>
               </Link>

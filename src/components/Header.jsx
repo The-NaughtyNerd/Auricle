@@ -4,8 +4,9 @@ import { navLinks } from '../constants';
 import { BsMoonFill, BsSunFill } from 'react-icons/bs';
 import { RxHamburgerMenu } from 'react-icons/rx';
 import { AiOutlineClose } from 'react-icons/ai';
-import { useEffect, useState } from 'react';
+import { useContext, useState } from 'react';
 import useDarkMode from '../theme/useDarkMode';
+import { Context } from '../Contexts/Context';
 import '../sass/main.scss';
 
 const Header = () => {
@@ -14,7 +15,7 @@ const Header = () => {
     colorTheme === 'light' ? true : false
   );
   const [toggle, setToggle] = useState(false);
-  const [active, setActive] = useState('');
+  const { active, setActive } = useContext(Context);
 
   const toggleDarkMode = (checked) => {
     setTheme(colorTheme);
@@ -103,7 +104,6 @@ const Header = () => {
                     ? 'text-secondaryColor'
                     : 'text-white'
                 } "transition-all hover:text-secondaryColor"`}
-                // className="text-white transition-all hover:text-secondaryColor"
               >
                 {item.linkName}
               </Link>

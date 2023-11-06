@@ -11,27 +11,30 @@ import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { ContextProvider } from './Contexts/Context';
 
 function App() {
   return (
     <>
-      <div>
-        <ToastContainer />
-        <ScrollToTop />
-        <Header />
+      <ContextProvider>
+        <div>
+          <ToastContainer />
+          <ScrollToTop />
+          <Header />
 
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/service" element={<Service />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/pricing" element={<Pricing />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/service" element={<Service />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
 
-        <Footer />
-      </div>
+          <Footer />
+        </div>
+      </ContextProvider>
     </>
   );
 }
